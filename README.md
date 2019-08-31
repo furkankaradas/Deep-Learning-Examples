@@ -10,26 +10,6 @@ CUDA Version: 10.2
 
 MNIST Dataset
 ---
-
-### Neural Network Information
-Fully Connected Layer Size: 784, 600, 600, 10
-
-Activation Function: Leakly ReLU
-
-Loss Function: Cross Entropy
-
-Optimization Function: Adam
-
-### Accuracy
-25 Epoch -> 98.33 %
-
-IRIS Dataset
----
-### Neural Network Information
-Fully Connected Layer Size: 4, 4, 3
-
-Activation Function: Leakly ReLU
-
-Loss Function: Cross Entropy
-
-Optimization Function: Adam
+| Dataset      | Layers                      | Layers Size                  | Activation Function            | Loss Function              | Optimization Function     | Epoch  | Scores |
+|:------------:|:---------------------------:|:----------------------------:|:------------------------------:|:--------------------------:|:-------------------------:|:------:|:------:|
+|    MNIST     |   Fully Connected Layer     |     784, 600, 600, 10        |      Leakly ReLU               |    Cross Entropy           |        Adam               |   25   |97.97 % |

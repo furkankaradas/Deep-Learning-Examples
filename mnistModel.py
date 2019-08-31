@@ -43,11 +43,15 @@ class model():
         self.optimizer = optim.Adam(self.model.parameters(), lr = learningRate)
 
     def loadTrainDataset(self):
-        self.trainSet = dataset.MNIST(root = './data', train = True, transform = transform.ToTensor(), download = True)
+        transforms = transform.Compose([transform.ToTensor(),transform.Normalize((0.5,),(0.5,)),])
+
+        self.trainSet = dataset.MNIST(root = './data', train = True, transform = transforms, download = True)
         self.trainLoader = data.DataLoader(dataset = self.trainSet, batch_size = batchSize, shuffle = True)
 
     def loadTestDataset(self):
-        self.testSet = dataset.MNIST(root = './data', train = False, transform = transform.ToTensor())
+        transforms = transform.Compose([transform.ToTensor(),transform.Normalize((0.5,),(0.5,)),])
+
+        self.testSet = dataset.MNIST(root = './data', train = False, transform = transforms)
         self.testLoader = torch.utils.data.DataLoader(dataset = self.testSet, batch_size = batchSize, shuffle = False)
 
     def trainModel(self):
