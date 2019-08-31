@@ -10,6 +10,6 @@ CUDA Version: 10.2
 
 Neural Network Informations
 ---
-| Dataset      | Layers                      | Layers Size                  | Activation Function            | Loss Function              | Optimization Function     | Epoch  | Scores |
+| Dataset      | Layer Types                 | Layers Size                  | Activation Function            | Loss Function              | Optimization Function     | Epoch  | Scores |
 |:------------:|:---------------------------:|:----------------------------:|:------------------------------:|:--------------------------:|:-------------------------:|:------:|:------:|
 |    MNIST     |   Fully Connected Layer     |     784, 600, 600, 10        |      Leakly ReLU               |    Cross Entropy           |        Adam               |   25   |98.12 % |
