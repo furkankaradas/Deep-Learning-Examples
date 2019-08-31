@@ -8,8 +8,8 @@ Device Driver Version: 430.26
 
 CUDA Version: 10.2
 
-MNIST Dataset
+Neural Network Informations
 ---
 | Dataset      | Layers                      | Layers Size                  | Activation Function            | Loss Function              | Optimization Function     | Epoch  | Scores |
 |:------------:|:---------------------------:|:----------------------------:|:------------------------------:|:--------------------------:|:-------------------------:|:------:|:------:|
-|    MNIST     |   Fully Connected Layer     |     784, 600, 600, 10        |      Leakly ReLU               |    Cross Entropy           |        Adam               |   25   |97.97 % |
+|    MNIST     |   Fully Connected Layer     |     784, 600, 600, 10        |      Leakly ReLU               |    Cross Entropy           |        Adam               |   25   |98.12 % |
